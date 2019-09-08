@@ -2,8 +2,8 @@
     - docs.python.org
 
 **Книжки:**
-    - A byte of Python(для новичков)
-    - A dive into Python(для более продвинутых)
+- A byte of Python(для новичков)
+- A dive into Python(для более продвинутых)
 
 
 *Немного про строки:*
