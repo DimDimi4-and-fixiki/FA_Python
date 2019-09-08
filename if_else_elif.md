@@ -1,5 +1,5 @@
 **Свежая документация python:**
-    - docs.python.org
+    docs.python.org
 
 **Книжки:**
 - A byte of Python(для новичков)
