@@ -124,7 +124,7 @@ else:
 rating = int(input("Введите свои баллы"))
 if 0 <= rating < 50:
     print("Неудачник")
-if 51 <= rating < 70:
+if 50 <= rating < 70:
     print("Ну такое...")
 if 70 <= rating < 86:
     print("Что, не мог подучить?")
