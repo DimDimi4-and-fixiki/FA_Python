@@ -180,7 +180,7 @@ print(a + b + c)
 ```python
 string = input("Введите -> ")
 
-temperature = float(string([0 : -1]))
+temperature = float(string([0:-1]))
 scale = string[-1]
 
 if scale == "C":
