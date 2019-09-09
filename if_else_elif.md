@@ -135,17 +135,12 @@ else:
 ```
 
 **Задание2. По номеру года вывести високосный он или обычный:**
-
 *Решение:*
 
 ```python
 year = int(input("Введите год -> "))
 
-if (year % 400 == 0):
-    print("Leap")
-elif (year % 100) == 0:
-    print("Regular")
-elif (year % 4) == 0:
+if (year % 400 == 0) or ((year % 4) == 0 and (year % 100 != 0)):
     print("Leap")
 else:
     print("Regular")
