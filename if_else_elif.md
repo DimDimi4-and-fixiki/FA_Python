@@ -122,7 +122,7 @@ else:
 
 ```python
 rating = int(input("Введите свои баллы"))
-if rating < 50:
+if 0 <= rating < 50:
     print("Неудачник")
 if 51 <= rating < 70:
     print("Ну такое...")
