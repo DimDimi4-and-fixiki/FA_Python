@@ -166,7 +166,7 @@ print(a + b + c)
 *Решение2:*
 
 ```python
-number = str(input())
+number = str(input("Введите число "))
 a = int(number[0]) # первая цифра
 b = int(number[1]) # вторая цифра
 c = int(number[2]) # третья цифра
