@@ -173,5 +173,23 @@ c = int(number[2]) # третья цифра
 
 print(a + b + c)
 ```
+**Задание 4. Вводится число градусов Фаренгейт или Цельсий. Перевести Цельсий в Фаренгейт или наоборот**
 
+*Решение:*
+
+```python
+string = input("Введите -> ")
+
+temperature = float(string([0 : -1]))
+scale = string[-1]
+
+if scale == "C":
+    res = round(temperature * 1.8 + 32, 3)
+    print(str(res) + "F")
+elif scale == "F":
+    res = round((temperature - 32) / 1.8, 3)
+    print(str(res) + "C")
+else:
+    print("Каво?")
+```
 
