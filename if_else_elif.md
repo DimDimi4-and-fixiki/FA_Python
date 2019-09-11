@@ -180,14 +180,14 @@ print(a + b + c)
 ```python
 string = input("Введите -> ")
 
-temperature = float(string([0:-1]))
-scale = string[-1]
+temperature = float(string([0:-1])) # число градусов
+scale = string[-1] # последний символ строки
 
 if scale == "C":
-    res = round(temperature * 1.8 + 32, 3)
+    res = round(temperature * 1.8 + 32, 3) #перевод из Цельсий с округлением до 3ех знаков
     print(str(res) + "F")
 elif scale == "F":
-    res = round((temperature - 32) / 1.8, 3)
+    res = round((temperature - 32) / 1.8, 3) #перевод из Фаренгейт с округлением до 3ех знаков
     print(str(res) + "C")
 else:
     print("Каво?")
