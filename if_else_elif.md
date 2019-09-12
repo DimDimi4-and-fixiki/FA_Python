@@ -180,16 +180,45 @@ print(a + b + c)
 ```python
 string = input("Введите -> ")
 
-temperature = float(string([0:-1])) # число градусов
-scale = string[-1] # последний символ строки
+temperature = float(string([0:-1]))
+scale = string[-1]
 
 if scale == "C":
-    res = round(temperature * 1.8 + 32, 3) #перевод из Цельсий с округлением до 3ех знаков
+    res = round(temperature * 1.8 + 32, 3)
     print(str(res) + "F")
 elif scale == "F":
-    res = round((temperature - 32) / 1.8, 3) #перевод из Фаренгейт с округлением до 3ех знаков
+    res = round((temperature - 32) / 1.8, 3)
     print(str(res) + "C")
 else:
     print("Каво?")
 ```
 
+**Задание 5. Даны числа a, b, c. Решить квадратное уравнение ax^2 + bx + c = 0**
+
+*Решение:*
+
+```python
+
+a = float(input("a = "))
+b = float(input("b = "))
+c = float(input("c = "))
+
+D = b ** 2 - 4 * a * c #считаем дискриминант
+
+equation = str(a) + "x^2 +" + str(b) + "x +" + str(c)
+
+print("Решаем уравнене", equation)
+
+if D < 0:
+    print("Действительных корней нет")
+elif D == 0:
+    x = - b / (2 * a)
+    print("Единственный корень", x)
+else:
+    x1 = (-b + D**(1/2)) / (2 * a)
+    x2 = (-b - D**(1/2)) / (2 * a)
+    print("Первый корень:", x1)
+    print("Второй корень:", x2)
+
+    
+```
