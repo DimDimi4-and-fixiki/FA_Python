@@ -54,3 +54,21 @@ while num > 1:
 print("Факториал", fact)
 
 ```
+
+**Задание 3. Дано число, вывести составное оно или простое**
+
+*Решение: *
+
+```python
+num = int(input())
+res = "Простое"
+
+candidate = 2
+
+while candidate < num:
+    if num % candidate == 0:
+        res = "Составное"
+    candidate += 1
+
+print(res)
+```
