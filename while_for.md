@@ -25,7 +25,7 @@ while i < 5: # этот цикл выведет Hello world 5 раз
 num = int(input())
 sum = 0
 
-if num < 0:
+if num < 0:  # случай для отрицательного числа
     num *= -1
 
 while num != 0:
@@ -57,7 +57,7 @@ print("Факториал", fact)
 
 **Задание 3. Дано число, вывести составное оно или простое**
 
-*Решение: *
+*Решение:*
 
 ```python
 num = int(input())
@@ -65,9 +65,9 @@ res = "Простое"
 
 candidate = 2
 
-while candidate < num:
+while candidate < num:  #перебираем все числа от 2 до num - 1 и проверяеи делится ли num на них
     if num % candidate == 0:
-        res = "Составное"
+        res = "Составное" # переменная, в которой храним ответ
     candidate += 1
 
 print(res)
