@@ -65,7 +65,7 @@ res = "Простое"
 
 candidate = 2
 
-while candidate < num:  # перебираем все числа от 2 до (num - 1) и проверяеи делится ли num на них
+while candidate < num:  # перебираем все числа от 2 до (num - 1) и проверяем делится ли num на них
     if num % candidate == 0:
         res = "Составное" # переменная, в которой храним ответ
     candidate += 1
