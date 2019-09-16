@@ -72,3 +72,26 @@ while candidate < num:  # перебираем все числа от 2 до (nu
 
 print(res)
 ```
+
+**Задание 4. Вывести все простые числа от 2 до num**
+
+*Решение: *
+
+```python
+
+num = int(input("До сколько считать?"))
+
+i = 2
+while i <= num:
+    is_prime = True
+    # проверка на простоту числа i
+    j = 2
+    while j < i:
+        if i % j == 0:
+            #число i делится на j, значит оно не простое
+            is_prime = False
+        j += 1
+    if is_prime:
+        print(i)
+    i += 1
+```
