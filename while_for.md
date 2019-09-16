@@ -75,7 +75,7 @@ print(res)
 
 **Задание 4. Вывести все простые числа от 2 до num**
 
-*Решение:*
+*Решение: *
 
 ```python
 
@@ -86,10 +86,11 @@ while i <= num:
     is_prime = True
     # проверка на простоту числа i
     j = 2
-    while j < i:
+    while j <= i ** (1 / 2):
         if i % j == 0:
             #число i делится на j, значит оно не простое
             is_prime = False
+            break # заканчивает цикл
         j += 1
     if is_prime:
         print(i)
