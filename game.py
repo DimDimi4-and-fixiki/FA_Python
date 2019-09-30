@@ -1,4 +1,4 @@
-**Пишем игру**
+***Пишем игру***
 
 ```python
 from random import randint #подключаем рандом
