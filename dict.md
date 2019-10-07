@@ -104,11 +104,13 @@ num = input()
 ans = 0
 text = num.split(' ')
 for word in text:
-    if not word in nums:
+    if  word in nums:
+        ans += nums[word]
+    else:
         print("Введите, пожалуйста, правильно")
-        exit(0)
-    ans += nums[word]
-print(ans)
+        break     
+else:
+    print(ans)
 
 
 ```
@@ -172,7 +174,7 @@ a.append(((num // 10) % 10) * 10)
 a.append(num % 10)
 
 
-s = "" # строка для ответа
+s = "" # сторка для ответа
 
 for elem in a:
     if elem in meta_nums:
